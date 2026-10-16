@@ -1,7 +1,7 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
 import Image from 'next/image';
-import {ArrowUpRight,ArrowDown,Code2,MousePointer2,Pause,Play,Mail,MessageCircle,ArrowLeft} from 'lucide-react';
+import {ArrowUpRight,ArrowDown,Code2,MousePointer2,Pause,Play,Mail,MessageCircle} from 'lucide-react';
 import {projects,site} from '@/lib/site';
 const photos:Record<string,string>={os:'/images/andradetech-demo-preview.jpg',menu:'/images/brasa-preview.jpg',shop:'/images/amarilis-preview.jpg',schedule:'/images/forma-preview.jpg',finance:'/images/controle-financeiro-preview.jpg'};
 // Original vector geometry: shaded tube approximation, no source artwork or paid fonts.
@@ -19,7 +19,7 @@ export default function SlushPortfolio(){
  },[]);
  const visible=projects.filter(p=>filter==='Todos'||p.category===filter);
  return <div ref={root} className={`slush-study ${paused?'slush-paused':''}`}>
-  <a className="skip-link" href="#sl-main">Pular para o conteúdo</a><div className="sl-preview-bar"><a href="https://marcelo-andrade-portfolio-virid.vercel.app/"><ArrowLeft size={14}/> Ver portfólio atual</a><span>Portfólio Slush · Marcelo Andrade</span></div>
+  <a className="skip-link" href="#sl-main">Pular para o conteúdo</a>
   <header className="sl-header"><a href="#sl-inicio" className="sl-logo" aria-label="Marcelo Andrade, início">ma.</a><nav aria-label="Navegação principal"><a href="#sl-projetos">Projetos</a><a href="#sl-servicos">Serviços</a><a href="#sl-sobre">Sobre</a></nav><a href={site.whatsapp||'#sl-contato'} className="sl-button sl-dark" target="_blank" rel="noopener noreferrer">Vamos conversar <ArrowUpRight size={16}/></a></header>
   <main id="sl-main">
    <section className="sl-hero" id="sl-inicio"><Ribbon/><button className="sl-pause" onClick={()=>setPaused(v=>!v)} aria-pressed={paused}>{paused?<Play size={14}/>:<Pause size={14}/>} {paused?'Retomar movimento':'Pausar movimento'}</button>
