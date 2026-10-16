@@ -1,18 +1,23 @@
-# Marcelo Andrade - Portfólio
+# Marcelo Andrade — Portfólio Slush
 
-Portfólio público com Next.js, React, TypeScript e Tailwind CSS.
+Versão independente do portfólio, inspirada no guia visual Slush enviado pelo autor. Identidade clara, tipografia grande e geometria vetorial original. Não inclui fontes ou arquivos 3D pagos.
 
-## Produção
-https://marcelo-andrade-portfolio-virid.vercel.app/
+- Site: https://marcelo-andrade-portfolio-slush.vercel.app/
+- Portfólio original: https://marcelo-andrade-portfolio-virid.vercel.app/
+- Repositório original: https://github.com/M4RC3L002/marcelo-andrade-portfolio
 
-## Executar
-Use npm ci, npm run dev e npm run build. Para servir a compilação, npm start.
+## Desenvolvimento
 
-## Conteúdo
-Cinco projetos, páginas de detalhes, filtros, demonstrações, contatos e mensagem personalizada de WhatsApp. Projetos demonstrativos e planejados possuem identificação explícita. Fundo animado com pausa manual, movimento reduzido e pausa fora da tela.
+```sh
+npm ci
+npm run dev
+npm run build
+```
+
+Next.js, React, TypeScript e Tailwind CSS. Página Slush na rota inicial, detalhes dos cinco projetos e links para demonstrações. A rota /preview-slush redireciona para a página inicial. Site, metadados e sitemap usam o novo domínio.
 
 ## Publicação
-A branch main alimenta a produção na Vercel. O usuário aprovou a promoção da versão animada. Indexação habilitada e canonical aponta para a URL oficial. Histórico anterior preservado no GitHub.
 
-## Referência
-Composição própria inspirada em https://landing-page-mate.vercel.app/. Não reutiliza código, vídeos, fotografias, logotipo ou fonte da agência. Fontes consultadas do Watermelon UI documentadas no histórico e em DESIGN.md.
+Projeto Vercel independente conectado à main deste repositório. Sem credenciais obrigatórias. NEXT_PUBLIC_SITE_URL pode definir um domínio personalizado no futuro.
+
+Este repositório foi importado do original para preservar os arquivos e o histórico, sem vínculo automático de atualização. Alterações aqui não publicam no portfólio original.

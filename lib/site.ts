@@ -6,7 +6,7 @@ export const site = {
   phoneLabel: '(73) 98834-3028',
   github: github && /^https:\/\/github\.com\/[a-zA-Z0-9-]+\/?$/.test(github) ? github : null,
   whatsapp: phone && /^[1-9]\d{9,14}$/.test(phone) ? `https://wa.me/${phone}?text=${encodeURIComponent(whatsappMessage)}` : null,
-  url: process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') || 'https://marcelo-andrade-portfolio-virid.vercel.app',
+  url: process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') || 'https://marcelo-andrade-portfolio-slush.vercel.app',
 };
 export type Project = {
  slug: string; name: string; category: string; kind: string; text: string;

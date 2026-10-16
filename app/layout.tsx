@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   twitter: { card: 'summary_large_image' },
   robots: { index: true, follow: true },
 };
-export const viewport: Viewport = { themeColor: '#101415', width: 'device-width', initialScale: 1 };
+export const viewport: Viewport = { themeColor: '#dceeff', width: 'device-width', initialScale: 1 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return <html lang="pt-BR"><body>{children}</body></html>;
 }
